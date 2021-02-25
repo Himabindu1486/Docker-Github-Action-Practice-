@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish to Docker Repository
-      uses: Himabindu1486/Publish-Docker-Github-Action@master
+      uses: Himabindu1486/Docker-Github-Action-Practice@master
       with:
         name: devopsbindu/docker-repo
         username: ${{ secrets.DOCKER_USERNAME }}
