@@ -4,10 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: himabindu1486/Docker-Github-Action-Practice@master
+    - uses: actions/checkout@master
     - name: Publish to Docker Repository
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: Himabindu1486/Devops-Github-Actions@master
       with:
-        name: devopsbindu/docker-githubaction
+        name: devopsbindu/docker-github-action
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
